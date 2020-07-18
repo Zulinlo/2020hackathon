@@ -3,6 +3,7 @@
 	<head>
 		<title>OfficePal</title>
 		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css" />
 		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 		<script src="script.js"></script>
@@ -10,16 +11,17 @@
 	<body>
 		<div class="wrapper">
 			<div class="header">
-				<h1>Welcome to OfficePal</h1>
+				<h1 style="font-size: 70px;">Welcome to OfficePal</h1>
 				<p>A website created by Byte by Byte.</p>
 			</div>
 
 			<div class="navbar">
-				<a href="../main.html">Home</a>
-				<a href="#">Work Health & Safety</a>
+				<a class="b" href="../main.html">Home</a>
+				<a>  |   </a>
+				<a class="b" href="./whs/whs.html">Work Health & Safety</a>
 			</div>
 			<div class="corona_updates">
-				<h2>Weekly Events</h2>
+				<h2 style="font-weight: 900; color: #e5e5e5;">Weekly Events</h2>
 				<div class="wrap">
 					<div class="news">
 						<span>Monday</span>
@@ -40,17 +42,16 @@
 				</div>
 			</div>
 			<div class="main">
-				<h2>Break Countdown</h2>
-
+				<div id="start">Sync Countdown</div>
 				<span id="time">00:10</span>
 				<img src="../OfficePal.png" class="logo" />
 			</div>
 		</div>
 		<div id="popup">
 			<div class="rap">
-				<h1>Time for a break!</h1>
-				<div class="hide">I'm busy, next break</div>
-				<div class="hide">Okay!</div>
+				<h1 style="font-size: 80px; position: absolute; top: 250px; bottom: 0px; right: 0; left: 0; margin: 0 auto; padding: 0;">Time for a break</h1>
+				<div class="hide" style="top: 520px; left: 50px">Unfortunately, I am busy</div>
+				<div class="hide" style="top: 520px; left: 1000px;">Okay</div>
 			</div>
 		</div>
 	</body>
