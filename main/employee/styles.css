@@ -1,4 +1,76 @@
+/* Style the body */
 body {
-	background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
 
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    position: relative;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    background: #6666ff;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    height: 5%;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.corona_updates {
+    background-color: #ddd;
+    width: 20%;
+    height: 75%;
+}
+
+.main {
+    width: 80%;
+    background-color: #FFF;
 }
