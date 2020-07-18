@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Business Kulture</title>
-		<meta charset="UTF-8">
+		<title>OfficePal</title>
+		<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles.css" />
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
 	</head>
 	<body>
 		<div class="wrapper">
@@ -13,16 +15,42 @@
 			</div>
 
 			<div class="navbar">
-				<a href="#">Home</a>
+				<a href="../main.html">Home</a>
 				<a href="#">Work Health & Safety</a>
-				<a href="#"></a>
-				<a href="#" class="right">Link</a>
 			</div>
 			<div class="corona_updates">
-				<div></div>
+				<h2>Weekly Events</h2>
+				<div class="wrap">
+					<div class="news">
+						<span>Monday</span>
+						<p>Calming Yoga <div style="text-align: right; font-size: 12px;">7:30 PM 21st July</div></p>
+					</div>
+					<div class="news">
+						<span>Wednesday</span>
+						<p>Baking Wednesdays <div style="text-align: right; font-size: 12px;">7:00 PM 22nd July</div></p>
+					</div>
+					<div class="news">
+						<span>Thursday</span>
+						<p>Pictionary and Chill <div style="text-align: right; font-size: 12px;">6:00 PM 23rd July</div></p>
+					</div>
+					<div class="news">
+						<span>Friday</span>
+						<p>Drinks on Zoom <div style="text-align: right; font-size: 12px;">8:00 PM 24th July</div></p>
+					</div>
+				</div>
 			</div>
 			<div class="main">
-				<h2></h2>
+				<h2>Break Countdown</h2>
+
+				<span id="time">00:10</span>
+				<img src="../OfficePal.png" class="logo" />
+			</div>
+		</div>
+		<div id="popup">
+			<div class="rap">
+				<h1>Time for a break!</h1>
+				<div class="hide">I'm busy, next break</div>
+				<div class="hide">Okay!</div>
 			</div>
 		</div>
 	</body>

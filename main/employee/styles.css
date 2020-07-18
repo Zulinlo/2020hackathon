@@ -30,9 +30,15 @@ body {
     color: white;
 }
 
+.logo {
+    position: absolute;
+    bottom: -60px;
+    right: -30px;
+    width: 20%;
+}
 /* Increase the font size of the heading */
 .header h1 {
-  font-size: 40px;
+  font-size: 46px;
 }
 
 /* Style the top navigation bar */
@@ -68,9 +74,103 @@ body {
     background-color: #ddd;
     width: 20%;
     height: 75%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    padding-left: 30px;
+}
+
+.corona_updates .wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.news {
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: #333;
+    transition: all .2s ease-in-out;
+    color: white;
+}
+
+.corona_updates h2 {
+    font-size: 38px;
+}
+
+.news:hover { transform: scale(1.1); }
+
+.news img {
+    width: 100px;
+}
+
+.news span {
+    font-size: 15px;
+}
+
+.news p {
+    font-size: 12px;
+    color: #e2e2e2;
 }
 
 .main {
     width: 80%;
     background-color: #FFF;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.main h2 {
+    padding-left: 10px;
+    text-align: left;
+    font-size: 25px;
+}
+
+#time {
+    top: 100px;
+    font-size: 180px;
+    font-family: 'Orbitron';
+    position: relative;
+}
+
+#popup {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#popup .rap {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 30px;
+    border: 7px solid #2b2b2b;
+    color: #3f3f3f;
+    background-color: white;
+    border-radius: 50px;
+    height: 70vh;
+    opacity: 1;
+    width: 70vw;
+    text-align: center;
+}
+
+.hide {
+    border: 1px solid #2b2b2b;
+    border-radius: 5px;
 }
